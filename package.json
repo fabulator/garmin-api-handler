@@ -1,0 +1,47 @@
+{
+  "name": "garmin-api-handler",
+  "version": "0.1.0",
+  "description": "Unofficial handler for Garmin connect API",
+  "main": "dist/index.js",
+  "jsnext:main": "dist/index.esm.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "lint": "eslint --ext .ts ./src ./tests",
+    "lint:export": "npm run lint -- -o ./tests_results/checkstyle/js-checkstyle.xml -f checkstyle",
+    "tsc": "tsc",
+    "build": "rollup --config ./rollup.config.js",
+    "test": "jest",
+    "test:build": "npm run test -- --config jest.config.build.js",
+    "test:all": "npm run lint && npm run tsc && npm run test",
+    "prepublishOnly": "npm run build && npm run tsc && npm run test:build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/fabulator/garmin-api-handler.git"
+  },
+  "author": "Michal Ozogán <michal@ozogan.eu>",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/fabulator/garmin-api-handler#readme",
+  "keywords": [
+    "garmin",
+    "garmin-api"
+  ],
+  "devDependencies": {
+    "@socifi/babel-config": "^0.6.0",
+    "@socifi/eslint-config": "^2.5.0",
+    "@socifi/jest-config": "^2.1.0",
+    "@socifi/rollup-config": "^2.0.1",
+    "@types/form-data": "^2.2.1",
+    "@types/luxon": "^1.4.1",
+    "@types/mathjs": "^4.4.3"
+  },
+  "dependencies": {
+    "cookie-api-handler": "^2.1.0",
+    "fitness-models": "^0.1.0",
+    "form-data": "^2.3.3",
+    "luxon": "^1.8.2",
+    "mathjs": "^5.3.0",
+    "rest-api-handler": "^2.1.0"
+  }
+}

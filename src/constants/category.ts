@@ -1,0 +1,9 @@
+export const UNCATEGORIZED = 'uncategorized';
+export const TRANSPORTATION = 'transportation';
+export const RACE = 'race';
+export const FITNESS = 'fitness';
+export const GEOCACHING = 'geocaching';
+export const RECREATIONAL = 'recreational';
+export const SPECIAL_EVENT = 'special-event';
+export const TOURING = 'touring';
+export const TRAINING = 'training';
