@@ -34,7 +34,7 @@
     "@socifi/rollup-config": "^2.0.1",
     "@types/form-data": "^2.2.1",
     "@types/luxon": "^1.4.1",
-    "@types/mathjs": "^4.4.3"
+    "@types/mathjs": "^4.4.4"
   },
   "dependencies": {
     "cookie-api-handler": "^2.1.0",
