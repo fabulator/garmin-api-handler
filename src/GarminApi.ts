@@ -136,6 +136,8 @@ export default class GarminApi extends CookieApi<any> {
 
     protected async activityUpdater(activity: Activity<number | undefined>): Promise<Activity<number>> {
         const distance = activity.getDistance();
+        const averageHR = activity.getAvgHeartRate();
+        const maxHR = activity.getMaxHeartRate();
 
         const { data } = await this.post(`activity-service/activity/${activity.getId() || ''}`, {
             activityName: activity.getTitle() || activity.getTypeId(),
@@ -145,7 +147,9 @@ export default class GarminApi extends CookieApi<any> {
             summaryDTO: {
                 duration: activity.getDuration().as('seconds'),
                 startTimeLocal: `${activity.getStart().toISO({ includeOffset: false, suppressMilliseconds: true })}.0`,
-                ...(distance ? { distance: distance.toNumber('m') } : {}),
+                ...(averageHR != null ? { averageHR } : {}),
+                ...(maxHR != null ? { maxHR } : {}),
+                ...(distance != null ? { distance: distance.toNumber('m') } : {}),
             },
             eventTypeDTO: {
                 typeKey: activity.getCategory(),
