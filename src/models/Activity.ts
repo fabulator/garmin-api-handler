@@ -42,7 +42,7 @@ export default class Activity<Id extends (number | undefined) = any, ApiSource e
         return new Activity({
             start: DateTime.fromFormat(
                 activity.summaryDTO.startTimeLocal,
-                'yyyy-MM-dd HH:mm:ss',
+                'yyyy-MM-ddTHH:mm:ss.0',
                 { zone: activity.timeZoneUnitDTO.timeZone },
             ),
             id: activity.activityId,
@@ -61,7 +61,7 @@ export default class Activity<Id extends (number | undefined) = any, ApiSource e
         return new Activity({
             start: DateTime.fromFormat(
                 activity.startTimeLocal,
-                'yyyy-MM-dd HH:mm:ss',
+                'yyyy-MM-ddTHH:mm:ss.0',
                 { zone: 'Europe/Prague' },
             ),
             id: activity.activityId,

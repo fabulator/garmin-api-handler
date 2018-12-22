@@ -10,11 +10,13 @@
     "lint": "eslint --ext .ts ./src ./tests",
     "lint:export": "npm run lint -- -o ./tests_results/checkstyle/js-checkstyle.xml -f checkstyle",
     "tsc": "tsc",
+    "develop": "tsc --emitDeclarationOnly false --watch",
     "build": "rollup --config ./rollup.config.js",
     "test": "jest",
     "test:build": "npm run test -- --config jest.config.build.js",
     "test:all": "npm run lint && npm run tsc && npm run test",
-    "prepublishOnly": "npm run build && npm run tsc && npm run test:build"
+    "prepublishOnly": "npm run build && npm run tsc && npm run test:build",
+    "release": "semantic-release"
   },
   "repository": {
     "type": "git",
@@ -29,12 +31,16 @@
   ],
   "devDependencies": {
     "@socifi/babel-config": "^0.6.0",
+    "@socifi/browserslist-config": "^0.1.0",
+    "@socifi/commitlint-config": "^1.0.0",
     "@socifi/eslint-config": "^2.5.0",
     "@socifi/jest-config": "^2.2.0",
     "@socifi/rollup-config": "^2.0.1",
     "@types/form-data": "^2.2.1",
     "@types/luxon": "^1.4.1",
-    "@types/mathjs": "^4.4.4"
+    "@types/mathjs": "^4.4.4",
+    "husky": "^1.2.1",
+    "semantic-release-config-fabulator": "^1.0.3"
   },
   "dependencies": {
     "cookie-api-handler": "^2.1.0",

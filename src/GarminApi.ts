@@ -1,6 +1,6 @@
 import { DefaultResponseProcessor } from 'rest-api-handler';
 import CookieApi from 'cookie-api-handler';
-import * as FormData from 'form-data';
+import FormData from 'form-data';
 import GarminApiException from './exceptions/GarminApiException';
 import Activity from './models/Activity';
 import { ActivityFilters, API } from './types';
