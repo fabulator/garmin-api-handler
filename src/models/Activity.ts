@@ -61,7 +61,7 @@ export default class Activity<Id extends (number | undefined) = any, ApiSource e
         return new Activity({
             start: DateTime.fromFormat(
                 activity.startTimeLocal,
-                'yyyy-MM-ddTHH:mm:ss.0',
+                'yyyy-MM-dd HH:mm:ss',
                 { zone: 'Europe/Prague' },
             ),
             id: activity.activityId,
