@@ -33,7 +33,7 @@
     "@socifi/babel-config": "^0.6.0",
     "@socifi/browserslist-config": "^0.1.0",
     "@socifi/commitlint-config": "^1.0.0",
-    "@socifi/eslint-config": "^2.6.1",
+    "@socifi/eslint-config": "^2.7.1",
     "@socifi/jest-config": "^2.3.0",
     "@socifi/rollup-config": "^2.1.0",
     "@types/form-data": "^2.2.1",
