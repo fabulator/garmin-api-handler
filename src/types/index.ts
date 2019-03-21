@@ -51,8 +51,8 @@ export type ActivityType = typeof UNCATEGORIZED_ACTIVITY |
     typeof SKATING |
     typeof STRENGTH_TRAINING;
 
-export type ActivityFilters = {
+export interface ActivityFilters {
     limit?: number,
     startDate?: DateTime,
     endDate?: DateTime,
-};
+}

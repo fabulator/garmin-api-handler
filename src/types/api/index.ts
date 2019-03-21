@@ -1,6 +1,6 @@
 import { Category, ActivityType } from '..';
 
-export type DetailApiActivity = {
+export interface DetailApiActivity {
     activityId: number,
     activityName: string,
     userProfileId: number,
@@ -106,9 +106,9 @@ export type DetailApiActivity = {
         maxVerticalSpeed: number,
     },
     locationName: string,
-};
+}
 
-export type ListApiActivity = {
+export interface ListApiActivity {
     activityId: number,
     activityName: string,
     description: null,
@@ -166,7 +166,7 @@ export type ListApiActivity = {
     activityLikeDisplayNames: null,
     activityLikeFullNames: null,
     requestorRelationship: null,
-    userRoles: Array<string>,
+    userRoles: string[],
     privacy: {
         typeId: number,
         typeKey: string,
@@ -293,9 +293,9 @@ export type ListApiActivity = {
     pr: boolean,
     autoCalcCalories: boolean,
     parent: boolean,
-};
+}
 
-export type GearResponse = {
+export interface GearResponse {
     gearPk: number,
     uuid: string,
     userProfilePk: number,
@@ -314,13 +314,13 @@ export type GearResponse = {
     notified: boolean,
     createDate: string,
     updateDate: string,
-};
+}
 
-export type ActivityPoints = {
+export interface ActivityPoints {
     activityId: number,
     measurementCount: number,
     metricsCount: number,
-    metricDescriptors: Array<{
+    metricDescriptors: {
         metricsIndex: number,
         key: string,
         unit: {
@@ -328,8 +328,8 @@ export type ActivityPoints = {
             key: string,
             factor: number,
         },
-    }>,
-    activityDetailMetrics: Array<{
-        metrics: Array<number>,
-    }>,
-};
+    }[],
+    activityDetailMetrics: {
+        metrics: number[],
+    }[],
+}

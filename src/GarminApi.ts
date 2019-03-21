@@ -89,7 +89,7 @@ export default class GarminApi extends CookieApi<any> {
         return data;
     }
 
-    public async getActivities(filter: ActivityFilters): Promise<Array<Activity>> {
+    public async getActivities(filter: ActivityFilters): Promise<Activity[]> {
         const { startDate, endDate } = filter;
 
         const { data } = await this.get('activitylist-service/activities/search/activities', {
