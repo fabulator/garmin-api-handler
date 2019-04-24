@@ -1,6 +1,15 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.2.1] 2019-04-24
+### Fixed
+- Login by adding referrer
+
+### Other
+- Update dependency mathjs to ^5.9.0
+- Update dependency fitness-models to ^0.4.0
+- Update dependency @types/luxon to ^1.12.0
+
 ## [0.2.0] 2019-03-29
 ### Changed
 - Updated dependencies
