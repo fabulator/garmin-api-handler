@@ -42,6 +42,7 @@ export default class GarminApi extends CookieApi<any> {
             embed: false,
         }, CookieApi.FORMATS.URL_ENCODED, {
             'Content-Type': 'application/x-www-form-urlencoded',
+            'Referer': 'https://sso.garmin.com/sso/signin',
         });
 
         const ticket = /ticket=(([a-zA-Z]|-|\d)*)/g.exec(data);
