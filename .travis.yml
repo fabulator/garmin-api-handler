@@ -7,6 +7,7 @@ script:
     - npm run lint
     - npm run test
     - npm run tsc
+after_success:
     - npm run release
 notifications:
     email: false
