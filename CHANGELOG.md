@@ -1,6 +1,13 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.3.0] 2019-05-20
+### Other
+- Update dependency husky to ^2.3.0
+
+### Changed
+- Update dependencies 
+
 ## [0.2.1] 2019-04-24
 ### Fixed
 - Login by adding referrer
