@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.5.0] 2019-10-24
+### Changed
+- [a6ff9d7](https://github.com/fabulator/garmin-api-handler/commit/a6ff9d745ff15a8bad5d9b010d52ef68196f3ae1) Update dev dependency @socifi/rollup-config to ^2.2.2
+
 ## [0.4.0] 2019-10-21
 ### Changed
 - [b30a434](https://github.com/fabulator/garmin-api-handler/commit/b30a434be480c835f3d9d759d87c75a10e6927d5) Updated dependencies
