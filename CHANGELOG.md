@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.8.0] 2019-10-31
+### Changed
+- [e5c6f5f](https://github.com/fabulator/garmin-api-handler/commit/e5c6f5f6b68b0ab17995beb895dbf7f8c3eac666) Update dependency fitness-models to ^0.7.0
+
 ## [0.7.0] 2019-10-29
 ### Changed
 - [a3bd182](https://github.com/fabulator/garmin-api-handler/commit/a3bd1827b77fe7d3f10d4631f73d2652ad00bba8) Update dependency rest-api-handler to ^2.4.1
