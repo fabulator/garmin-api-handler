@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.10.0] 2019-11-02
+### Changed
+- [5011b5a](https://github.com/fabulator/garmin-api-handler/commit/5011b5a3c6de4316dc942bb5c184206183d221c9) Update dependency luxon to ^1.21.0
+
 ## [0.9.0] 2019-11-01
 ### Changed
 - [4c0d138](https://github.com/fabulator/garmin-api-handler/commit/4c0d1387f1b6128001adb3e49f61838ba9543039) Update dependency cookie-api-handler to ^2.4.0
