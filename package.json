@@ -40,7 +40,6 @@
         "cross-fetch": "^3.0.4"
     },
     "dependencies": {
-        "@types/form-data": "^2.5.0",
         "@types/luxon": "^1.15.2",
         "@types/mathjs": "^6.0.2",
         "cookie-api-handler": "^2.4.0",
