@@ -1,6 +1,13 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.11.0] 2019-11-03
+### Added
+- [35808d4](https://github.com/fabulator/garmin-api-handler/commit/35808d4650439befd1268f2728bd64ea67491335) Mountain bike activity
+
+### Fixed
+- [35808d4](https://github.com/fabulator/garmin-api-handler/commit/35808d4650439befd1268f2728bd64ea67491335) Remove depricated dependenci.
+
 ## [0.10.0] 2019-11-02
 ### Changed
 - [5011b5a](https://github.com/fabulator/garmin-api-handler/commit/5011b5a3c6de4316dc942bb5c184206183d221c9) Update dependency luxon to ^1.21.0
