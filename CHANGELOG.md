@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.12.0] 2019-11-05
+### Changed
+- [c74704e](https://github.com/fabulator/garmin-api-handler/commit/c74704eaa2ac60a35289d26d81d1c3e5c94c60e3) Update dependency fitness-models to ^0.8.0
+
 ## [0.11.0] 2019-11-03
 ### Added
 - [35808d4](https://github.com/fabulator/garmin-api-handler/commit/35808d4650439befd1268f2728bd64ea67491335) Mountain bike activity
