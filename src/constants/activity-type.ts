@@ -8,3 +8,4 @@ export const OTHER = 'other';
 export const YOGA = 'yoga';
 export const SWIMMING = 'swimming';
 export const MOUNTAIN_BIKING = 'mountain_biking';
+export const FITNESS_EQUIPMENT = 'fitness_equipment';

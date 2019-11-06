@@ -22,6 +22,7 @@ import {
     SKATING,
     STRENGTH_TRAINING,
     MOUNTAIN_BIKING,
+    FITNESS_EQUIPMENT,
 } from '../constants/activity-type';
 import * as API_SOURCE from './api';
 
@@ -51,7 +52,8 @@ export type ActivityType = typeof UNCATEGORIZED_ACTIVITY |
     typeof CYCLING |
     typeof SKATING |
     typeof STRENGTH_TRAINING |
-    typeof MOUNTAIN_BIKING;
+    typeof MOUNTAIN_BIKING |
+    typeof FITNESS_EQUIPMENT;
 
 export interface ActivityFilters {
     limit?: number,
