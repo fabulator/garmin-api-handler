@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.13.0] 2019-11-06
+### Added
+- [b780c2c](https://github.com/fabulator/garmin-api-handler/commit/b780c2c4a8d2fa0d80a2ef2fc6c5e70493c41562) Fitness equipment workout type.
+
 ## [0.12.0] 2019-11-05
 ### Changed
 - [c74704e](https://github.com/fabulator/garmin-api-handler/commit/c74704eaa2ac60a35289d26d81d1c3e5c94c60e3) Update dependency fitness-models to ^0.8.0
