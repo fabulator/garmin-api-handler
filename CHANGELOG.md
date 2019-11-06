@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.14.0] 2019-11-06
+### Changed
+- [2fcd7ec](https://github.com/fabulator/garmin-api-handler/commit/2fcd7ec12eead348264bd48b958d9c0796c9f0a7) Update dependency luxon to ^1.21.1
+
 ## [0.13.0] 2019-11-06
 ### Added
 - [b780c2c](https://github.com/fabulator/garmin-api-handler/commit/b780c2c4a8d2fa0d80a2ef2fc6c5e70493c41562) Fitness equipment workout type.
