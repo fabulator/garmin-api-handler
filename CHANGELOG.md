@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [1.11.1] 2019-12-03
+### Fixed
+- [2dfa186](https://github.com/fabulator/garmin-api-handler/commit/2dfa186324d5d2ae9a3338f4bd245e7c1266428d) Parsing timeformat from garmin.
+
 ## [1.11.0] 2019-11-30
 ### Changed
 - [5466382](https://github.com/fabulator/garmin-api-handler/commit/5466382ae8e2747c9e42da631398c79468aa40bf) Update dependency fitness-models to ^0.14.0
