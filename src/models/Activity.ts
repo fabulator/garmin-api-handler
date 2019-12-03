@@ -42,7 +42,7 @@ export default class Activity<Id extends (number | undefined) = any, ApiSource e
         return new Activity({
             start: DateTime.fromFormat(
                 activity.summaryDTO.startTimeLocal,
-                'yyyy-MM-ddTHH:mm:ss.0',
+                'yyyy-MM-dd\'T\'HH:mm:ss.0',
                 { zone: activity.timeZoneUnitDTO.timeZone },
             ),
             id: activity.activityId,
