@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [1.12.0] 2019-12-08
+### Changed
+- [ea22a62](https://github.com/fabulator/garmin-api-handler/commit/ea22a629d805e63572c595ec23cc7ffd6c973cbc) Update dependency rest-api-handler to v2.7.0
+
 ## [1.11.1] 2019-12-03
 ### Fixed
 - [2dfa186](https://github.com/fabulator/garmin-api-handler/commit/2dfa186324d5d2ae9a3338f4bd245e7c1266428d) Parsing timeformat from garmin.
