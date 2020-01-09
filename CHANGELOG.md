@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [1.21.0] 2020-01-09
+### Changed
+- [d3a5444](https://github.com/fabulator/garmin-api-handler/commit/d3a5444ea7e6f057d25ef03aeaca04c6b9da1da6) Update dependency fitness-models to ^0.16.0
+
 ## [1.20.0] 2020-01-07
 ### Changed
 - [bf4524a](https://github.com/fabulator/garmin-api-handler/commit/bf4524aedf11314987d5586adf67484405039d5f) Update dependency mathjs to v6.4.0
