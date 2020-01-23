@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [1.28.0] 2020-01-23
+### Changed
+- [102cafb](https://github.com/fabulator/garmin-api-handler/commit/102cafbd9ee806445a2546efc3349f275e7b788c) Update dependency @types/mathjs to v6.0.4
+
 ## [1.27.0] 2020-01-17
 ### Changed
 - [b8252a6](https://github.com/fabulator/garmin-api-handler/commit/b8252a6d17f5d895c5ad87b0766a481d0fd36b26) Update dependency cookie-api-handler to v2.11.0
