@@ -1,6 +1,32 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [1.36.0] 2020-04-29
+### Changed
+- [5bdd351](https://github.com/fabulator/garmin-api-handler/commit/5bdd351d53320ac7e5cb1e711ae5e20bea7dd470) Push notes to garmin activities.
+- [d53a843](https://github.com/fabulator/garmin-api-handler/commit/d53a84360542b77b3f988a8a54b7aef03a3d82a8) Update dependency cookie-api-handler to v2.15.0
+- [157c29c](https://github.com/fabulator/garmin-api-handler/commit/157c29c68c8eca313b15145566ec3376a52cb201) Update dependency fitness-models to ^0.31.0
+- [3ac0746](https://github.com/fabulator/garmin-api-handler/commit/3ac074678d9185f65ade9a9170116c345ec14832) Update dependency mathjs to v6.6.4
+- [c6780f3](https://github.com/fabulator/garmin-api-handler/commit/c6780f3d35ec51979650f88ffaa897c8e49a33df) Update dependency fitness-models to ^0.30.0
+- [8f95fdc](https://github.com/fabulator/garmin-api-handler/commit/8f95fdc7222c7e875eac1b2690cbe681186e569e) Update dependency mathjs to v6.6.3
+- [3fd5d2f](https://github.com/fabulator/garmin-api-handler/commit/3fd5d2f0ceed0701f2f8513099544e9ff4d09140) Update dependency fitness-models to ^0.29.0
+- [20ecc33](https://github.com/fabulator/garmin-api-handler/commit/20ecc33bb3ddb830c915fb5a8fa366c3a6f1ea83) Update dependency luxon to v1.23.0
+- [7f4ee62](https://github.com/fabulator/garmin-api-handler/commit/7f4ee623a4684d0ddd712378580faec0310ef687) Update dependency @types/mathjs to v6.0.5
+- [aa6b3f8](https://github.com/fabulator/garmin-api-handler/commit/aa6b3f8c067723466a45ad5d6114674687594fc2) Update dependency fitness-models to ^0.27.0
+- [e80a8f8](https://github.com/fabulator/garmin-api-handler/commit/e80a8f8c488873a6448799644676f6ce7af9a058) Update dependency mathjs to v6.6.2
+- [0ba2c74](https://github.com/fabulator/garmin-api-handler/commit/0ba2c7466a380ff974c3c767bd4625e332e65894) Update dependency fitness-models to ^0.26.0
+- [047b938](https://github.com/fabulator/garmin-api-handler/commit/047b93858e58d33c4a56bd606a42860cd8b3fb3f) Update dependency luxon to v1.22.2
+- [3d21f3d](https://github.com/fabulator/garmin-api-handler/commit/3d21f3d36d767d21e29bfffacb55c3ed0c501f4d) Update dependency fitness-models to ^0.25.0
+- [d5a6dd4](https://github.com/fabulator/garmin-api-handler/commit/d5a6dd487f10356dadd9bc71f088cf97f20958e4) Update dependency cookie-api-handler to v2.14.0
+- [71b1627](https://github.com/fabulator/garmin-api-handler/commit/71b162756592295a48fb0b45a26771a8f5be8e0a) Update dependency @types/luxon to v1.22.0
+- [ffd3b2a](https://github.com/fabulator/garmin-api-handler/commit/ffd3b2a8e6217ff0917d04382beae04e5a3dfec1) Update dependency rest-api-handler to v2.14.0
+- [b5ed32a](https://github.com/fabulator/garmin-api-handler/commit/b5ed32a2951a17722f503538ed990e26ffd6c169) Update dependency fitness-models to ^0.23.0
+- [fcad725](https://github.com/fabulator/garmin-api-handler/commit/fcad725dc833ff0d9318355d7318e906c87002db) Update dependency cookie-api-handler to v2.13.0
+- [bf2f36a](https://github.com/fabulator/garmin-api-handler/commit/bf2f36a78c508043799a676b1f5370a7c6bb1a8a) Update dependency rest-api-handler to v2.13.0
+- [5cee984](https://github.com/fabulator/garmin-api-handler/commit/5cee984ec0388d284eea127e5170a1171b7e5225) Update dependency fitness-models to ^0.22.0
+- [b6755e7](https://github.com/fabulator/garmin-api-handler/commit/b6755e7e948bc10ddd1bbda7a6c5d2e5b5d9838e) Update dependency mathjs to v6.6.1
+- [9dc60f6](https://github.com/fabulator/garmin-api-handler/commit/9dc60f6c6699e2697bf7334cc4bb798c8560be2a) Update dev dependency @socifi/eslint-config to v2.10.2 
+
 ## [1.35.0] 2020-02-03
 ### Changed
 - [943d06e](https://github.com/fabulator/garmin-api-handler/commit/943d06e9a2babef379999c63c3720f97444d3eb6) Update dependency fitness-models to ^0.21.0
