@@ -120,8 +120,10 @@ export default class GarminApi extends CookieApi<any> {
         });
         // @ts-ignore
         const response = await this.request('upload-service/upload/.gpx', 'POST', {
+            // @ts-ignore
             body: form,
         });
+
         this.setDefaultHeaders(headers);
 
         return response.data.detailedImportResult.successes[0].internalId;
@@ -158,6 +160,7 @@ export default class GarminApi extends CookieApi<any> {
             timeZoneUnitDTO: {
                 unitKey: 'Europe/Prague',
             },
+            description: activity.getNotes(),
             ...(activity.getId() ? { activityId: activity.getId() } : {}),
         }, CookieApi.FORMATS.JSON, {
             ...(activity.getId() ? { 'x-http-method-override': 'PUT' } : {}),
