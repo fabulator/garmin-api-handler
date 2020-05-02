@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [1.37.0] 2020-05-02
+### Changed
+- [06f44b0](https://github.com/fabulator/garmin-api-handler/commit/06f44b0afb886d597f65dcca39b110d466ad33dd) Update dependency rest-api-handler to v2.15.0
+
 ## [1.36.0] 2020-04-29
 ### Changed
 - [5bdd351](https://github.com/fabulator/garmin-api-handler/commit/5bdd351d53320ac7e5cb1e711ae5e20bea7dd470) Push notes to garmin activities.
