@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [1.38.0] 2020-05-03
+### Changed
+- [f518be1](https://github.com/fabulator/garmin-api-handler/commit/f518be1a965479afae8464f7f7dcbe7f206f3255) Update dependency cookie-api-handler to v2.16.0
+
 ## [1.37.0] 2020-05-02
 ### Changed
 - [06f44b0](https://github.com/fabulator/garmin-api-handler/commit/06f44b0afb886d597f65dcca39b110d466ad33dd) Update dependency rest-api-handler to v2.15.0
