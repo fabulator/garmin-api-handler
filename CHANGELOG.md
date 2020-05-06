@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [1.41.0] 2020-05-06
+### Changed
+- [1bf9a76](https://github.com/fabulator/garmin-api-handler/commit/1bf9a7695fb5e7434a696556b87201cd67c70a9b) Update dependency mathjs to v6.6.5
+
 ## [1.40.0] 2020-05-05
 ### Changed
 - [0552e22](https://github.com/fabulator/garmin-api-handler/commit/0552e225fffd085e2199fc8fc928398ab19f13a9) Update dependency luxon to v1.24.1
