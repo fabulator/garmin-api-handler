@@ -1,6 +1,6 @@
 {
     "name": "garmin-api-handler",
-    "version": "3.16.0",
+    "version": "3.17.0",
     "description": "Unofficial handler for Garmin connect API",
     "main": "dist/index.js",
     "jsnext:main": "dist/index.esm.js",
