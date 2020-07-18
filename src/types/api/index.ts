@@ -1,335 +1,336 @@
-import { Category, ActivityType } from '..';
+/* eslint-disable typescript-sort-keys/interface */
+import { ActivityType, Category } from '../../constants';
 
-export interface DetailApiActivity {
-    activityId: number,
-    activityName: string,
-    userProfileId: number,
-    isMultiSportParent: boolean,
-    activityTypeDTO: {
-        typeId: number,
-        typeKey: ActivityType,
-        parentTypeId: number,
-        sortOrder: number,
-    },
-    eventTypeDTO: {
-        typeId: number,
-        typeKey: Category,
-        sortOrder: number,
-    },
+export interface ApiDetailApiActivity {
     accessControlRuleDTO: {
-        typeId: number,
-        typeKey: string,
-    },
-    timeZoneUnitDTO: {
-        unitId: number,
-        unitKey: string,
-        factor: number,
-        timeZone: string,
-    },
+        typeId: number;
+        typeKey: string;
+    };
+    activityId: number;
+    activityName: string;
+    activityTypeDTO: {
+        parentTypeId: number;
+        sortOrder: number;
+        typeId: number;
+        typeKey: ActivityType;
+    };
+    eventTypeDTO: {
+        sortOrder: number;
+        typeId: number;
+        typeKey: Category;
+    };
+    isMultiSportParent: boolean;
+    locationName: string;
     metadataDTO: {
-        isOriginal: boolean,
-        deviceApplicationInstallationId: number,
-        agentApplicationInstallationId: null,
-        agentString: null,
-        fileFormat: {
-            formatId: number,
-            formatKey: string,
-        },
-        associatedCourseId: null,
-        lastUpdateDate: string,
-        uploadedDate: string,
-        videoUrl: null,
-        hasPolyline: boolean,
-        hasChartData: boolean,
-        hasHrTimeInZones: boolean,
-        hasPowerTimeInZones: boolean,
-        userInfoDto: {
-            userProfilePk: number,
-            displayname: string,
-            fullname: string,
-            profileImageUrlLarge: null,
-            profileImageUrlMedium: null,
-            profileImageUrlSmall: null,
-            userPro: boolean,
-        },
+        activityImages: [];
+        agentApplicationInstallationId: null;
+        agentString: null;
+        associatedCourseId: null;
+        associatedWorkoutId: null;
+        autoCalcCalories: boolean;
         chartAvailability: {
-            showDistance: boolean,
-            showDuration: boolean,
-            showElevation: boolean,
-            showHeartRate: boolean,
-            showMovingDuration: boolean,
-            showMovingSpeed: boolean,
-            showSpeed: boolean,
-            showTimestamp: boolean,
-        },
-        childIds: [],
-        sensors: [{ manufacturer: string }],
-        activityImages: [],
-        manufacturer: string,
-        diveNumber: null,
-        lapCount: number,
-        associatedWorkoutId: null,
-        isAtpActivity: null,
+            showDistance: boolean;
+            showDuration: boolean;
+            showElevation: boolean;
+            showHeartRate: boolean;
+            showMovingDuration: boolean;
+            showMovingSpeed: boolean;
+            showSpeed: boolean;
+            showTimestamp: boolean;
+        };
+        childIds: [];
+        deviceApplicationInstallationId: number;
         deviceMetaDataDTO: {
-            deviceId: null,
-            deviceTypePk: number,
-            deviceVersionPk: number,
-        },
-        gcj02: boolean,
-        autoCalcCalories: boolean,
-        favorite: boolean,
-        elevationCorrected: boolean,
-        manualActivity: boolean,
-        personalRecord: boolean,
-    },
+            deviceId: null;
+            deviceTypePk: number;
+            deviceVersionPk: number;
+        };
+        diveNumber: null;
+        elevationCorrected: boolean;
+        favorite: boolean;
+        fileFormat: {
+            formatId: number;
+            formatKey: string;
+        };
+        gcj02: boolean;
+        hasChartData: boolean;
+        hasHrTimeInZones: boolean;
+        hasPolyline: boolean;
+        hasPowerTimeInZones: boolean;
+        isAtpActivity: null;
+        isOriginal: boolean;
+        lapCount: number;
+        lastUpdateDate: string;
+        manualActivity: boolean;
+        manufacturer: string;
+        personalRecord: boolean;
+        sensors: [{ manufacturer: string }];
+        uploadedDate: string;
+        userInfoDto: {
+            displayname: string;
+            fullname: string;
+            profileImageUrlLarge: null;
+            profileImageUrlMedium: null;
+            profileImageUrlSmall: null;
+            userPro: boolean;
+            userProfilePk: number;
+        };
+        videoUrl: null;
+    };
     summaryDTO: {
-        startTimeLocal: string,
-        startTimeGMT: string,
-        startLatitude: number,
-        startLongitude: number,
-        distance: number,
-        duration: number,
-        movingDuration: number,
-        elapsedDuration: number,
-        elevationGain: number,
-        elevationLoss: number,
-        maxElevation: number,
-        minElevation: number,
-        averageSpeed: number,
-        averageMovingSpeed: number,
-        maxSpeed: number,
-        calories: number,
-        averageHR: number,
-        maxHR: number,
-        endLatitude: number,
-        endLongitude: number,
-        maxVerticalSpeed: number,
-    },
-    locationName: string,
+        averageHR: number;
+        averageMovingSpeed: number;
+        averageSpeed: number;
+        calories: number;
+        distance: number;
+        duration: number;
+        elapsedDuration: number;
+        elevationGain: number;
+        elevationLoss: number;
+        endLatitude: number;
+        endLongitude: number;
+        maxElevation: number;
+        maxHR: number;
+        maxSpeed: number;
+        maxVerticalSpeed: number;
+        minElevation: number;
+        movingDuration: number;
+        startLatitude: number;
+        startLongitude: number;
+        startTimeGMT: string;
+        startTimeLocal: string;
+    };
+    timeZoneUnitDTO: {
+        factor: number;
+        timeZone: string;
+        unitId: number;
+        unitKey: string;
+    };
+    userProfileId: number;
 }
 
-export interface ListApiActivity {
-    activityId: number,
-    activityName: string,
-    description: null,
-    startTimeLocal: string,
-    startTimeGMT: string,
+export interface ApiListApiActivity {
+    activeLengths: null;
+    activityId: number;
+    activityLikeAuthors: null;
+    activityLikeDisplayNames: null;
+    activityLikeFullNames: null;
+    activityName: string;
+    activityTrainingLoad: null;
     activityType: {
-        typeId: number,
-        typeKey: ActivityType,
-        parentTypeId: number,
-        sortOrder: number,
-    },
+        parentTypeId: number;
+        sortOrder: number;
+        typeId: number;
+        typeKey: ActivityType;
+    };
+    aerobicTrainingEffect: null;
+    anaerobicTrainingEffect: null;
+    atpActivity: boolean;
+    autoCalcCalories: boolean;
+    averageBikingCadenceInRevPerMinute: null;
+    averageHR: number;
+    averageRunningCadenceInStepsPerMinute: null;
+    averageSpeed: number;
+    averageSwimCadenceInStrokesPerMinute: null;
+    averageSwolf: null;
+    avgAirSpeed: null;
+    avgCda: null;
+    avgDepth: null;
+    avgDoubleCadence: null;
+    avgFractionalCadence: null;
+    avgGroundContactBalance: null;
+    avgGroundContactTime: null;
+    avgLeftBalance: null;
+    avgPower: null;
+    avgRespirationRate: null;
+    avgStrideLength: null;
+    avgStrokeCadence: null;
+    avgStrokeDistance: null;
+    avgStrokes: null;
+    avgVerticalOscillation: null;
+    avgVerticalRatio: null;
+    avgVerticalSpeed: null;
+    avgWattsPerCda: null;
+    avgWindYawAngle: null;
+    beginTimestamp: number;
+    bottomTime: null;
+    calories: number;
+    caloriesConsumed: null;
+    caloriesEstimated: null;
+    commentedByUser: null;
+    comments: null;
+    conversationPk: null;
+    conversationUuid: null;
+    courseId: null;
+    decoDive: null;
+    description: null;
+    deviceId: number;
+    distance: number;
+    diveNumber: null;
+    duration: number;
+    elapsedDuration: number;
+    elevationCorrected: boolean;
+    elevationGain: number;
+    elevationLoss: number;
+    endCns: null;
+    endLatitude: null;
+    endLongitude: null;
+    endN2: null;
     eventType: {
-        typeId: number,
-        typeKey: Category,
-        sortOrder: number,
-    },
-    comments: null,
-    parentId: null,
-    distance: number,
-    duration: number,
-    elapsedDuration: number,
-    movingDuration: number,
-    elevationGain: number,
-    elevationLoss: number,
-    averageSpeed: number,
-    maxSpeed: number,
-    startLatitude: number,
-    startLongitude: number,
-    hasPolyline: boolean,
-    ownerId: number,
-    ownerDisplayName: string,
-    ownerFullName: string,
-    ownerProfileImageUrlSmall: null,
-    ownerProfileImageUrlMedium: null,
-    ownerProfileImageUrlLarge: null,
-    ownerProfilePk: null,
-    calories: number,
-    averageHR: number,
-    maxHR: number,
-    averageRunningCadenceInStepsPerMinute: null,
-    maxRunningCadenceInStepsPerMinute: null,
-    averageBikingCadenceInRevPerMinute: null,
-    maxBikingCadenceInRevPerMinute: null,
-    averageSwimCadenceInStrokesPerMinute: null,
-    maxSwimCadenceInStrokesPerMinute: null,
-    averageSwolf: null,
-    activeLengths: null,
-    steps: null,
-    conversationUuid: null,
-    conversationPk: null,
-    numberOfActivityLikes: null,
-    numberOfActivityComments: null,
-    likedByUser: null,
-    commentedByUser: null,
-    activityLikeDisplayNames: null,
-    activityLikeFullNames: null,
-    requestorRelationship: null,
-    userRoles: string[],
-    privacy: {
-        typeId: number,
-        typeKey: string,
-    },
-    userPro: boolean,
-    courseId: null,
-    poolLength: null,
-    unitOfPoolLength: null,
-    hasVideo: boolean,
-    videoUrl: null,
-    timeZoneId: number,
-    beginTimestamp: number,
-    sportTypeId: number,
-    avgPower: null,
-    maxPower: null,
-    aerobicTrainingEffect: null,
-    anaerobicTrainingEffect: null,
-    strokes: null,
-    normPower: null,
-    leftBalance: null,
-    rightBalance: null,
-    avgLeftBalance: null,
-    max20MinPower: null,
-    avgVerticalOscillation: null,
-    avgGroundContactTime: null,
-    avgStrideLength: null,
-    avgFractionalCadence: null,
-    maxFractionalCadence: null,
-    trainingStressScore: null,
-    intensityFactor: null,
-    vO2MaxValue: null,
-    avgVerticalRatio: null,
-    avgGroundContactBalance: null,
-    lactateThresholdBpm: null,
-    lactateThresholdSpeed: null,
-    maxFtp: null,
-    avgStrokeDistance: null,
-    avgStrokeCadence: null,
-    maxStrokeCadence: null,
-    workoutId: null,
-    avgStrokes: null,
-    minStrokes: null,
-    deviceId: number,
-    minTemperature: null,
-    maxTemperature: null,
-    minElevation: number,
-    maxElevation: number,
-    avgDoubleCadence: null,
-    maxDoubleCadence: null,
-    summarizedExerciseSets: [],
-    maxDepth: null,
-    avgDepth: null,
-    surfaceInterval: null,
-    startN2: null,
-    endN2: null,
-    startCns: null,
-    endCns: null,
+        sortOrder: number;
+        typeId: number;
+        typeKey: Category;
+    };
+    excludeFromPowerCurveReports: null;
+    favorite: boolean;
+    floorsClimbed: null;
+    floorsDescended: null;
+    flow: null;
+    grit: null;
+    hasPolyline: boolean;
+    hasVideo: boolean;
+    intensityFactor: null;
+    jumpCount: null;
+    lactateThresholdBpm: null;
+    lactateThresholdSpeed: null;
+    lapCount: number;
+    leftBalance: null;
+    likedByUser: null;
+    locationName: string;
+    manufacturer: null;
+    max20MinPower: null;
+    maxAirSpeed: null;
+    maxAvgPower_1: null;
+    maxAvgPower_10: null;
+    maxAvgPower_120: null;
+    maxAvgPower_1200: null;
+    maxAvgPower_1800: null;
+    maxAvgPower_18000: null;
+    maxAvgPower_2: null;
+    maxAvgPower_20: null;
+    maxAvgPower_30: null;
+    maxAvgPower_300: null;
+    maxAvgPower_3600: null;
+    maxAvgPower_5: null;
+    ownerDisplayName: string;
+    maxAvgPower_600: null;
+    summarizedExerciseSets: [];
+    maxDepth: null;
+    ownerId: number;
+    surfaceInterval: null;
+    maxDoubleCadence: null;
+    maxPower: null;
+    maxFractionalCadence: null;
+    maxFtp: null;
     summarizedDiveInfo: {
-        weight: null,
-        weightUnit: null,
-        visibility: null,
-        visibilityUnit: null,
-        surfaceCondition: null,
-        current: null,
-        waterType: null,
-        waterDensity: null,
-        summarizedDiveGases: [],
-        totalSurfaceTime: number,
-    },
-    activityLikeAuthors: null,
-    avgVerticalSpeed: null,
-    maxVerticalSpeed: number,
-    floorsClimbed: null,
-    floorsDescended: null,
-    manufacturer: null,
-    diveNumber: null,
-    locationName: string,
-    bottomTime: null,
-    lapCount: number,
-    endLatitude: null,
-    endLongitude: null,
-    minAirSpeed: null,
-    maxAirSpeed: null,
-    avgAirSpeed: null,
-    avgWindYawAngle: null,
-    minCda: null,
-    maxCda: null,
-    avgCda: null,
-    avgWattsPerCda: null,
-    flow: null,
-    grit: null,
-    jumpCount: null,
-    caloriesEstimated: null,
-    caloriesConsumed: null,
-    waterEstimated: null,
-    waterConsumed: null,
-    maxAvgPower_1: null,
-    maxAvgPower_2: null,
-    maxAvgPower_5: null,
-    maxAvgPower_10: null,
-    maxAvgPower_20: null,
-    maxAvgPower_30: null,
-    maxAvgPower_60: null,
-    maxAvgPower_120: null,
-    maxAvgPower_300: null,
-    maxAvgPower_600: null,
-    maxAvgPower_1200: null,
-    maxAvgPower_1800: null,
-    maxAvgPower_3600: null,
-    maxAvgPower_7200: null,
-    maxAvgPower_18000: null,
-    excludeFromPowerCurveReports: null,
-    totalSets: number,
-    totalReps: number,
-    maxRespirationRate: null,
-    avgRespirationRate: null,
-    trainingEffectLabel: null,
-    activityTrainingLoad: null,
-    purposeful: boolean,
-    favorite: boolean,
-    decoDive: null,
-    elevationCorrected: boolean,
-    atpActivity: boolean,
-    pr: boolean,
-    autoCalcCalories: boolean,
-    parent: boolean,
+        weight: null;
+        weightUnit: null;
+        visibility: null;
+        visibilityUnit: null;
+        surfaceCondition: null;
+        current: null;
+        waterType: null;
+        waterDensity: null;
+        summarizedDiveGases: [];
+        totalSurfaceTime: number;
+    };
+    userRoles: string[];
+    maxRespirationRate: null;
+    maxVerticalSpeed: number;
+    maxSpeed: number;
+    ownerProfileImageUrlMedium: null;
+    ownerProfileImageUrlSmall: null;
+    maxTemperature: null;
+    maxBikingCadenceInRevPerMinute: null;
+    minAirSpeed: null;
+    minCda: null;
+    minElevation: number;
+    minStrokes: null;
+    steps: null;
+    movingDuration: number;
+    normPower: null;
+    numberOfActivityComments: null;
+    numberOfActivityLikes: null;
+    maxCda: null;
+    ownerFullName: string;
+    maxSwimCadenceInStrokesPerMinute: null;
+    ownerProfileImageUrlLarge: null;
+    rightBalance: null;
+    videoUrl: null;
+    ownerProfilePk: null;
+    startLatitude: number;
+    parentId: null;
+    poolLength: null;
+    pr: boolean;
+    trainingStressScore: null;
+    purposeful: boolean;
+    requestorRelationship: null;
+    privacy: {
+        typeId: number;
+        typeKey: string;
+    };
+    sportTypeId: number;
+    startCns: null;
+    maxHR: number;
+    startLongitude: number;
+    startN2: null;
+    maxStrokeCadence: null;
+    startTimeLocal: string;
+    minTemperature: null;
+    strokes: null;
+    maxRunningCadenceInStepsPerMinute: null;
+    userPro: boolean;
+    workoutId: null;
+    startTimeGMT: string;
+    totalReps: number;
+    totalSets: number;
+    trainingEffectLabel: null;
+    waterEstimated: null;
+    unitOfPoolLength: null;
+    maxAvgPower_7200: null;
+    timeZoneId: number;
+    maxAvgPower_60: null;
+    vO2MaxValue: null;
+    waterConsumed: null;
+    maxElevation: number;
+    parent: boolean;
 }
 
-export interface GearResponse {
-    gearPk: number,
-    uuid: string,
-    userProfilePk: number,
-    gearMakeName: string,
-    gearModelName: string,
-    gearTypeName: string,
-    gearStatusName: string,
-    displayName: string,
-    customMakeModel: string,
-    imageNameLarge: null,
-    imageNameMedium: null,
-    imageNameSmall: null,
-    dateBegin: string,
-    dateEnd: null,
-    maximumMeters: number,
-    notified: boolean,
-    createDate: string,
-    updateDate: string,
+export interface ApiGearResponse {
+    createDate: string;
+    customMakeModel: string;
+    dateBegin: string;
+    dateEnd: null;
+    displayName: string;
+    gearMakeName: string;
+    gearModelName: string;
+    gearPk: number;
+    gearStatusName: string;
+    gearTypeName: string;
+    imageNameLarge: null;
+    imageNameMedium: null;
+    imageNameSmall: null;
+    maximumMeters: number;
+    notified: boolean;
+    updateDate: string;
+    userProfilePk: number;
+    uuid: string;
 }
 
-export interface ActivityPoints {
-    activityId: number,
-    measurementCount: number,
-    metricsCount: number,
-    metricDescriptors: {
-        metricsIndex: number,
-        key: string,
-        unit: {
-            id: 40,
-            key: string,
-            factor: number,
-        },
-    }[],
+export interface ApiActivityPoints {
     activityDetailMetrics: {
-        metrics: number[],
-    }[],
+        metrics: number[];
+    }[];
+    activityId: number;
+    measurementCount: number;
+    metricDescriptors: {
+        key: string;
+        metricsIndex: number;
+        unit: {
+            factor: number;
+            id: 40;
+            key: string;
+        };
+    }[];
+    metricsCount: number;
 }

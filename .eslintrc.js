@@ -1,8 +1,6 @@
 module.exports = {
-    extends: [
-        '@socifi',
-    ],
+    extends: ['fabulator'],
     rules: {
-        'camelcase': 0,
+        camelcase: 0,
     },
 };

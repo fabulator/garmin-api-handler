@@ -1,12 +1,12 @@
 import { DateTime, Duration } from 'luxon';
-import { Activity } from '../../src';
+import { Activity, ActivityType } from '../../src';
 
 describe('Test Activity class', () => {
     let activity: Activity;
 
     beforeEach(() => {
         activity = new Activity({
-            typeId: Activity.TYPE.WALKING,
+            typeId: ActivityType.WALKING,
             id: undefined,
             source: undefined,
             start: DateTime.local(),

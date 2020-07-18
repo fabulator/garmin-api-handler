@@ -11,7 +11,7 @@ export default async (response: Response): Promise<string> => {
 
     try {
         return JSON.parse(responseText);
-    } catch (exception) {
+    } catch {
         return responseText;
     }
 };
