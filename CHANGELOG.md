@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v4.0.0 (2020-07-18)
+### Refactored
+- [c99049b](https://github.com/fabulator/garmin-api-handler/commit/c99049b3518bfe1922bccf26eb9206eb7bdc135a) Use new building engine, changed types structure BREAKING
+
 ## [3.22.0] 2020-07-18
 ### Changed
 - [ecc095d](https://github.com/fabulator/garmin-api-handler/commit/ecc095d5e4baed53f001c30e50198c16f8df617d) Update dependency fitness-models to v2.9.0
