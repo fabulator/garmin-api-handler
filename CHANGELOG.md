@@ -1,6 +1,11 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v4.1.0 (2020-07-22)
+### Changed
+- [929946e](https://github.com/fabulator/garmin-api-handler/commit/929946e5e65bf403c524dd279e7b14f26e388e68) Update dependency @types/luxon to v1.24.2
+- [787ca34](https://github.com/fabulator/garmin-api-handler/commit/787ca34180ead87f4d23873f9fa0b3a7ae3c45b0) Update dev dependency eslint-config-fabulator to v1.0.2 
+
 ## v4.0.0 (2020-07-18)
 ### Refactored
 - [c99049b](https://github.com/fabulator/garmin-api-handler/commit/c99049b3518bfe1922bccf26eb9206eb7bdc135a) Use new building engine, changed types structure BREAKING
