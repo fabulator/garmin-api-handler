@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v4.3.0 (2020-07-24)
+### Changed
+- [3bd77d1](https://github.com/fabulator/garmin-api-handler/commit/3bd77d1a5bb63e4e9f9569a7d35ac67de003b376) Update dependency @types/luxon to v1.24.3
+
 ## v4.2.0 (2020-07-24)
 ### Changed
 - [a1dd29a](https://github.com/fabulator/garmin-api-handler/commit/a1dd29a62a56613f3f9c69422943e43874983219) Update dependency fitness-models to v3.1.0
