@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v4.4.0 (2020-08-09)
+### Added
+- [c234f24](https://github.com/fabulator/garmin-api-handler/commit/c234f246020815738ae52e830a6971a5898e9796) Uploading and downloading fit files
+
 ## v4.3.0 (2020-07-24)
 ### Changed
 - [3bd77d1](https://github.com/fabulator/garmin-api-handler/commit/3bd77d1a5bb63e4e9f9569a7d35ac67de003b376) Update dependency @types/luxon to v1.24.3
