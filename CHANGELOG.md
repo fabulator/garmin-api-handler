@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v4.4.1 (2020-08-09)
+### Fixed
+- [edf7039](https://github.com/fabulator/garmin-api-handler/commit/edf70397e4f24789d76fed889206eac8ec5b4247) return type of activity export
+
 ## v4.4.0 (2020-08-09)
 ### Added
 - [c234f24](https://github.com/fabulator/garmin-api-handler/commit/c234f246020815738ae52e830a6971a5898e9796) Uploading and downloading fit files
