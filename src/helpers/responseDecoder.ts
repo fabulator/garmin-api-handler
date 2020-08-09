@@ -1,6 +1,10 @@
-export default async (response: Response): Promise<string> => {
+export default async (response: Response): Promise<string | Blob> => {
     if (response.status === 204 || response.status === 302) {
         return '';
+    }
+
+    if (response.headers.get('content-type') === 'application/x-zip-compressed') {
+        return response.blob();
     }
 
     const responseText = await response.text();

@@ -100,6 +100,11 @@ export default class GarminApi extends CookieApi<any> {
         return data;
     }
 
+    public async getActivityFile(id: number): Promise<Buffer> {
+        const { data } = await this.get(`download-service/files/activity/${id}`);
+        return data;
+    }
+
     public async getActivities(filter: ActivityFilters): Promise<Activity[]> {
         const { startDate, endDate } = filter;
 
@@ -114,11 +119,11 @@ export default class GarminApi extends CookieApi<any> {
         });
     }
 
-    public async uploadGpx(gpx: string): Promise<number> {
+    public async upload(fileContent: string | Buffer, format: 'gpx' | 'fit'): Promise<number> {
         const form = new FormData();
 
-        form.append('file', gpx, {
-            filename: 'activity.gpx',
+        form.append('file', fileContent, {
+            filename: `activity.${format}`,
             contentType: 'application/octet-stream',
         });
 
@@ -129,13 +134,17 @@ export default class GarminApi extends CookieApi<any> {
             nk: headers.nk,
         });
 
-        const response = await this.request('upload-service/upload/.gpx', 'POST', {
+        const response = await this.request(`upload-service/upload/.${format}`, 'POST', {
             body: form as any,
         });
 
         this.setDefaultHeaders(headers);
 
         return response.data.detailedImportResult.successes[0].internalId;
+    }
+
+    public async uploadGpx(gpx: string): Promise<number> {
+        return this.upload(gpx, 'gpx');
     }
 
     public async createActivity(activity: Activity<undefined, undefined>) {
