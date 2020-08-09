@@ -100,7 +100,7 @@ export default class GarminApi extends CookieApi<any> {
         return data;
     }
 
-    public async getActivityFile(id: number): Promise<Buffer> {
+    public async getActivityFile(id: number): Promise<Blob> {
         const { data } = await this.get(`download-service/files/activity/${id}`);
         return data;
     }
