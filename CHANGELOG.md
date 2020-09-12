@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v4.4.2 (2020-09-12)
+### Fixed
+- [5c17bba](https://github.com/fabulator/garmin-api-handler/commit/5c17bbada7bfd502964538286dd7a2ed876a28ab) Security lock update
+
 ## v4.4.1 (2020-08-09)
 ### Fixed
 - [edf7039](https://github.com/fabulator/garmin-api-handler/commit/edf70397e4f24789d76fed889206eac8ec5b4247) return type of activity export
