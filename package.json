@@ -1,6 +1,6 @@
 {
   "name": "garmin-api-handler",
-  "version": "4.4.20",
+  "version": "4.4.21",
   "description": "Unofficial handler for Garmin connect API",
   "keywords": [
     "garmin",
