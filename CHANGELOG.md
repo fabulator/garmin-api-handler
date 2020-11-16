@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v4.4.31 (2020-11-16)
+### Fixed
+- [b57ad62](https://github.com/fabulator/garmin-api-handler/commit/b57ad62aace98c616b7fe4a7a5fb5bc56e39ebe7) Update lock for security updated
+
 ## v4.4.30 (2020-11-16)
 ### Fixed
 - [744d7ae](https://github.com/fabulator/garmin-api-handler/commit/744d7ae4450270c980202a161d355b53d1d11e72) Update lock for security updated
