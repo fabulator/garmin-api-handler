@@ -35,7 +35,7 @@
     "@types/mathjs": "^6.0.5",
     "cookie-api-handler": "^2.22.0",
     "fitness-models": "^3.0.1",
-    "form-data": "^3.0.0",
+    "form-data": "^4.0.0",
     "luxon": "^1.24.1",
     "mathjs": "^7.1.0",
     "rest-api-handler": "^2.20.0"
