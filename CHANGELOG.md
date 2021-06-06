@@ -1,6 +1,18 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v5.0.0 (2021-06-06)
+### Fixed
+- [0efb39f](https://github.com/fabulator/garmin-api-handler/commit/0efb39f86493378b8e2b3182aa0a68cab111a89e) Math dependency.
+
+### Changed
+- [43c547e](https://github.com/fabulator/garmin-api-handler/commit/43c547e692970bafd8ad9c3567cc5ba31c927110) Update dependency mathjs to v9 BREAKING (#217)
+
+Co-authored-by: Renovate Bot <bot@renovateapp.com>
+- [17dd96a](https://github.com/fabulator/garmin-api-handler/commit/17dd96a7ed71334983d4dbfe6d5818aac8efba33) Update dependency form-data to v4 BREAKING (#227)
+
+Co-authored-by: Renovate Bot <bot@renovateapp.com>
+
 ## v4.4.76 (2021-05-31)
 ### Fixed
 - [f1819fb](https://github.com/fabulator/garmin-api-handler/commit/f1819fbc2833ab6aeac9c655a27a5288ab85caea) Update lock for security updated
