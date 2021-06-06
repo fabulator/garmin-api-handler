@@ -119,6 +119,15 @@ export default class GarminApi extends CookieApi<any> {
         });
     }
 
+    public logWeight(date: DateTime, kg: number) {
+        return this.post('weight-service/user-weight', {
+            gmtTimestamp: date.toISO({ includeOffset: false }),
+            dateTimestamp: date.toISO({ includeOffset: false }),
+            unitKey: 'kg',
+            value: kg,
+        });
+    }
+
     public async upload(fileContent: string | Buffer, format: 'gpx' | 'fit'): Promise<number> {
         const form = new FormData();
 
