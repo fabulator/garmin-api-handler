@@ -36,7 +36,7 @@
     "cookie-api-handler": "^2.23.45",
     "fitness-models": "^4.0.0",
     "form-data": "^4.0.0",
-    "luxon": "^1.27.0",
+    "luxon": "^2.0.0",
     "mathjs": "^9.4.2",
     "request": "^2.88.2",
     "request-promise": "^4.2.6",
