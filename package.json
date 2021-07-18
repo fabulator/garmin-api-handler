@@ -31,24 +31,24 @@
     "tsc": "tsc"
   },
   "dependencies": {
-    "@types/luxon": "^1.26.5",
+    "@types/luxon": "^1.27.1",
     "cloudscraper": "^4.6.0",
-    "cookie-api-handler": "^2.23.45",
-    "fitness-models": "^4.0.0",
+    "cookie-api-handler": "^2.24.0",
+    "fitness-models": "^4.1.0",
     "form-data": "^4.0.0",
-    "luxon": "^1.27.0",
-    "mathjs": "^9.4.2",
+    "luxon": "^2.0.1",
+    "mathjs": "^9.4.4",
     "request": "^2.88.2",
     "request-promise": "^4.2.6",
-    "rest-api-handler": "^2.20.0"
+    "rest-api-handler": "^2.21.0"
   },
   "devDependencies": {
-    "babel-config-fabulator": "^1.0.0",
-    "commitlint-config-fabulator": "^1.1.0",
+    "babel-config-fabulator": "^1.2.1",
+    "commitlint-config-fabulator": "^2.0.2",
     "cross-fetch": "^3.1.4",
-    "eslint-config-fabulator": "^1.1.1",
-    "jest-config-fabulator": "^1.0.0",
-    "rollup-config-fabulator": "^1.0.0",
-    "semantic-release-config-fabulator": "^2.6.1"
+    "eslint-config-fabulator": "^1.2.2",
+    "jest-config-fabulator": "^1.1.0",
+    "rollup-config-fabulator": "^1.1.0",
+    "semantic-release-config-fabulator": "^2.6.2"
   }
 }

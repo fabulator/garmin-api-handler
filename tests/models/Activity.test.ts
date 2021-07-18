@@ -10,7 +10,7 @@ describe('Test Activity class', () => {
             id: undefined,
             source: undefined,
             start: DateTime.local(),
-            duration: Duration.fromMillis(100000),
+            duration: Duration.fromMillis(100_000),
         });
     });
 
