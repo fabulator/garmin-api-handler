@@ -2,6 +2,9 @@ import CookieApi from 'cookie-api-handler';
 import FormData from 'form-data';
 import { DateTime } from 'luxon';
 import { DefaultResponseProcessor } from 'rest-api-handler';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import { GarminConnect } from 'garmin-connect';
 import GarminApiException from './exceptions/GarminApiException';
 import responseDecoder from './helpers/responseDecoder';
 import Activity from './models/Activity';
@@ -20,6 +23,8 @@ export default class GarminApi extends CookieApi<any> {
         super('https://connect.garmin.com/modern/proxy', [new DefaultResponseProcessor(GarminApiException, responseDecoder)], {
             'nk': 'NT',
             'Content-Type': 'application/json',
+            'dnt': '1',
+            'origin': 'https://connect.garmin.com',
         });
 
         this.session = session;
@@ -40,6 +45,23 @@ export default class GarminApi extends CookieApi<any> {
     }
 
     public async login(email: string, password: string): Promise<string> {
+        const GCClient = new GarminConnect();
+
+        await GCClient.login(email, password);
+
+        const { cookies } = GCClient.client.cookies._jar.toJSON();
+
+        const session = cookies.find((item: any) => item.key === 'SESSIONID' && item.domain === 'connect.garmin.com').value;
+        const __cflb = cookies.find((item: any) => item.key === '__cflb' && item.domain === 'connect.garmin.com').value;
+
+        this.setSession(session);
+
+        this.addCookies({ __cflb });
+
+        return session;
+
+        // does not pass clouflare protection
+        /*
         // get ticket from login form
         const { data } = await this.post(
             'https://sso.garmin.com/sso/login?service=https%3A%2F%2Fconnect.garmin.com%2Fmodern%2F',
@@ -82,7 +104,7 @@ export default class GarminApi extends CookieApi<any> {
 
         this.setSession(cookies.SESSIONID);
 
-        return cookies.SESSIONID;
+        return cookies.SESSIONID; */
     }
 
     public async getActivity(id: number): Promise<Activity<number, ApiDetailApiActivity>> {
