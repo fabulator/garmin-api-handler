@@ -18,6 +18,6 @@ jobs:
                   npm run tsc
                   npm run release
               env:
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_BOT_TOKEN }}
+                  GITHUB_TOKEN: ${{ secrets.GHUB_BOT_TOKEN }}
                   DOCKER_USERNAME: fabulator
                   DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
