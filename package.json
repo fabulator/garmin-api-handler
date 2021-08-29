@@ -31,7 +31,7 @@
     "tsc": "tsc"
   },
   "dependencies": {
-    "@types/luxon": "^1.27.1",
+    "@types/luxon": "^2.0.0",
     "cloudscraper": "^4.6.0",
     "cookie-api-handler": "^2.24.0",
     "fitness-models": "^4.1.0",
