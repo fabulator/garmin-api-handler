@@ -19,5 +19,6 @@ jobs:
                   npm run release
               env:
                   GITHUB_TOKEN: ${{ secrets.GHUB_BOT_TOKEN }}
+                  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
                   DOCKER_USERNAME: fabulator
                   DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
