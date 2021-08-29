@@ -1,6 +1,20 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v5.0.10 (2021-08-29)
+### Other
+- [a6f6a20](https://github.com/fabulator/garmin-api-handler/commit/a6f6a202a7bce0366dae6af328cf414c900cc239) WIP
+
+### Fixed
+- [5b1de33](https://github.com/fabulator/garmin-api-handler/commit/5b1de339dd0cceb8c95b54d4f4af456fb0bf0826) remove travys
+
+### WIP
+- [fcf1a3a](https://github.com/fabulator/garmin-api-handler/commit/fcf1a3a5ed45fc6ab87e42e596f445a45cf1f0ad) Fix workflow
+- [3de9323](https://github.com/fabulator/garmin-api-handler/commit/3de9323d09f0230b932ca7319556880d996a7647) Add workflow
+
+### Fix
+- [ab24fc2](https://github.com/fabulator/garmin-api-handler/commit/ab24fc25fe0463a09e5b93c6d0624cdc4120b1c8) Login verification
+
 ## v5.0.9 (2021-08-01)
 ### Fixed
 - [353c325](https://github.com/fabulator/garmin-api-handler/commit/353c325a480a6d550e008f8501d2719caba79653) Update lock for security updated
