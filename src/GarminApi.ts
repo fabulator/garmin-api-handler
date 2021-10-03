@@ -143,7 +143,7 @@ export default class GarminApi extends CookieApi<any> {
 
     public logWeight(date: DateTime, kg: number) {
         return this.post('weight-service/user-weight', {
-            gmtTimestamp: date.toISO({ includeOffset: false }),
+            gmtTimestamp: date.setZone('UTC').toISO({ includeOffset: false }),
             dateTimestamp: date.toISO({ includeOffset: false }),
             unitKey: 'kg',
             value: kg,
