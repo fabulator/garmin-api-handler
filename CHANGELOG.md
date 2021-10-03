@@ -1,6 +1,13 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v5.0.16 (2021-10-03)
+### Other
+- [489e0ca](https://github.com/fabulator/garmin-api-handler/commit/489e0ca9df745dac44f331cca5d149acbcfd6089) WIP
+
+### Fixed
+- [8126187](https://github.com/fabulator/garmin-api-handler/commit/8126187c47ef33dbf66d1a4a61a43c73b38e4f2b) Time of weight.
+
 ## v5.0.15 (2021-09-20)
 ### Fixed
 - [be66516](https://github.com/fabulator/garmin-api-handler/commit/be665162c4518748604209db2ed5baddfc70e725) Update lock for security updated
