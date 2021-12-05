@@ -82,7 +82,7 @@ export interface ApiDetailApiActivity {
         averageMovingSpeed: number;
         averageSpeed: number;
         calories: number;
-        distance: number;
+        distance: number | null;
         duration: number;
         elapsedDuration: number;
         elevationGain: number;
@@ -165,7 +165,7 @@ export interface ApiListApiActivity {
     decoDive: null;
     description: null;
     deviceId: number;
-    distance: number;
+    distance: number | null;
     diveNumber: null;
     duration: number;
     elapsedDuration: number;
