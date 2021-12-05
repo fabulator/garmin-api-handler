@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v5.0.26 (2021-12-05)
+### Fixed
+- [23b5b28](https://github.com/fabulator/garmin-api-handler/commit/23b5b286d4f9131fb7b1a068e2cfcdad09f0bec5) Activity parsing without distance
+
 ## v5.0.25 (2021-11-29)
 ### Fixed
 - [ef5710f](https://github.com/fabulator/garmin-api-handler/commit/ef5710fafcd02bf0c70833af2786d965b2ec63ba) Update lock for security updated
