@@ -1,6 +1,12 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v6.0.0 (2022-02-06)
+### Changed
+- [ab6c838](https://github.com/fabulator/garmin-api-handler/commit/ab6c8382be4724f9340ed98f7793d02d69fd0f9c) Update dependency mathjs to v10 BREAKING (#270)
+
+Co-authored-by: Renovate Bot <bot@renovateapp.com>
+
 ## v5.1.0 (2022-02-06)
 ### Changed
 - [4703ea8](https://github.com/fabulator/garmin-api-handler/commit/4703ea8ca5639da10ef8c1e51add6df925bdfbc4) Update dependency ansi-regex to 5.0.1 [SECURITY] (#289)
