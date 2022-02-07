@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v6.0.1 (2022-02-07)
+### Fixed
+- [052fe70](https://github.com/fabulator/garmin-api-handler/commit/052fe701b070cf7fb12ee55cc5aeb8fa70648490) Update lock to make security bots happy.
+
 ## v6.0.0 (2022-02-06)
 ### Changed
 - [ab6c838](https://github.com/fabulator/garmin-api-handler/commit/ab6c8382be4724f9340ed98f7793d02d69fd0f9c) Update dependency mathjs to v10 BREAKING (#270)
