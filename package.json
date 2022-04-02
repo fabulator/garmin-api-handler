@@ -34,7 +34,7 @@
     "@types/luxon": "^2.0.4",
     "cloudscraper": "^4.6.0",
     "cookie-api-handler": "^2.24.5",
-    "fitness-models": "^4.2.0",
+    "fitness-models": "^6.0.0",
     "form-data": "^4.0.0",
     "garmin-connect": "^1.4.1",
     "luxon": "^2.0.2",
