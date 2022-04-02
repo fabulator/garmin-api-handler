@@ -1,6 +1,21 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v7.0.0 (2022-04-02)
+### Changed
+- [61c0729](https://github.com/fabulator/garmin-api-handler/commit/61c07297541a4ad01c1793d8bfd1eb65f9996d85) Update dependency fitness-models to v6 BREAKING (#293)
+
+Co-authored-by: Renovate Bot <bot@renovateapp.com>
+- [8248fce](https://github.com/fabulator/garmin-api-handler/commit/8248fcea1e581997ba2b3531bc68d06cde4dab04) Update actions/checkout action to v3 (#301)  
+
+Co-authored-by: Renovate Bot <bot@renovateapp.com>
+- [f96c307](https://github.com/fabulator/garmin-api-handler/commit/f96c30759c2217376b6244d7aea49f1f8c542250) Update actions/setup-node action to v3 (#297)  
+
+Co-authored-by: Renovate Bot <bot@renovateapp.com>
+- [309011f](https://github.com/fabulator/garmin-api-handler/commit/309011fb4afd6e1b44567f95c85dd5f4fa9279c6) Update dev dependency commitlint-config-fabulator to v3  (#292) NO_RELEASE 
+
+Co-authored-by: Renovate Bot <bot@renovateapp.com>
+
 ## v6.0.15 (2022-03-28)
 ### Fixed
 - [c40cde4](https://github.com/fabulator/garmin-api-handler/commit/c40cde441c4d1560644a74d7eb10cc7a745d8666) Update lock to make security bots happy.
