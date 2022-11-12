@@ -14,6 +14,7 @@ export default async (response: Response): Promise<string | Blob> => {
     }
 
     try {
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-return
         return JSON.parse(responseText);
     } catch {
         return responseText;

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-argument,@typescript-eslint/no-unsafe-assignment,@typescript-eslint/no-unsafe-return,@typescript-eslint/no-unsafe-call,@typescript-eslint/no-unsafe-member-access */
 import CookieApi from 'cookie-api-handler';
 import FormData from 'form-data';
 import { DateTime } from 'luxon';
