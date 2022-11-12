@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v7.1.0 (2022-11-12)
+### Changed
+- [3ee7bad](https://github.com/fabulator/garmin-api-handler/commit/3ee7badbdefdce52f33195bf429facb725178822) Update dependencies
+
 ## v7.0.0 (2022-04-02)
 ### Changed
 - [61c0729](https://github.com/fabulator/garmin-api-handler/commit/61c07297541a4ad01c1793d8bfd1eb65f9996d85) Update dependency fitness-models to v6 BREAKING (#293)
