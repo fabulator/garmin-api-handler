@@ -39,7 +39,7 @@
     "form-data": "^4.0.0",
     "garmin-connect": "^1.4.3",
     "luxon": "^3.1.0",
-    "mathjs": "^11.3.3",
+    "mathjs": "^14.3.1",
     "request": "^2.88.2",
     "request-promise": "^4.2.6",
     "rest-api-handler": "^2.22.18"
